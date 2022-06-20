@@ -7,22 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <th>Movie</th>
-            <th>Year</th>
-            <th>Rating</th>
-        </tr>
-        <tr>
-            <td>Up</td>
-            <td>2009</td>
-            <td>PG</td>
-        </tr>
-        <tr>
-            <td>The Matrix</td>
-            <td>1999</td>
-            <td>R</td>
-        </tr>
-    </table>
+    <form action="/process" method="post">
+        <div>
+            <label>Name: </label>
+            <input type="text" name="name" 
+            placeholder="Your name..." >
+        </div>
+        <div>
+            <label>Email: </label>
+            <input type="text" name="email" 
+            placeholder="Your email..." >
+        </div>
+        <div>
+            <input type="checkbox" name="offers" 
+            id="offers" checked >
+            <label for="offers">I would like 
+            to receive email offers!</label>
+        </div>
+        <input type="submit" value="Sign Up!" >
+    </form>
 </body>
 </html>

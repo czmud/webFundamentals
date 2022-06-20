@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form> <!--leaving form actions blank as only formatting exercise-->
+        <div>
+            <label>First Name:<sup>*</sup></label>
+            <input type="text" name="firstName" placeholder="first name...">
+        </div>
+        <div>
+            <label>Last Name:<sup>*</sup></label>
+            <input type="text" name="lastName" placeholder="last name...">
+        </div>
+        <div>
+            <label>Email Address:<sup>*</sup></label>
+            <input type="text" name="email" placeholder="email address...">
+        </div>
+        <div>
+            <label>Password:<sup>*</sup></label>
+            <input type="password" name="firstName" placeholder="enter a secure password...">
+        </div>
+        <div>
+            <label>Confirm Password:<sup>*</sup></label>
+            <input type="password" name="firstName" placeholder="confirm password...">
+        </div>
+        <div>
+            <label>Birthday:</label>
+            <input type="date" name="birthday">
+        </div>
+        <div>
+            <label>Gender Identity:<br></label>
+            <input type="radio" name="genderIdentity" value="Male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="genderIdentity" value="Female" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="genderIdentity" value="Non-Binary" id="nonBinary">
+            <label for="nonBinary">Non-Binary</label>
+            <input type="radio" name="genderIdentity" value="Prefers not to answer" id="prefersNoAnswer">
+            <label for="female">I prefer not to answer</label>
+        </div>
+        <div style="text-align: top">
+            <label>A short description about myself:<br></label>
+            <input type="text" name="description" placeholder="share about yourself!..." style="width: 250px; height: 30px">
+            
+        </div>
+        <div>
+            <label>Favorite Language:</label>
+            <select name="programmingLanguage">
+                <option>CSS</option>
+                <option>HTML</option>
+                <option>JavaScript</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="receiveUpdates" id="receiveUpdates" checked>
+            <label for="receiveUpdates">Yes, I would like to receive periodic email updates</label>
+        </div>
+        <div> <!--leaving form actions blank as only formatting exercise-->
+            <input type="submit" value="Create Account">
+        </div>
+        <div>
+            <label><sup>*</sup>&nbsp;Indicates a required field</label>
+        </div>
+    </form>
+</body>
+</html>
