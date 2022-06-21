@@ -1,3 +1,1 @@
-# Hello World
-
-This is a readme for our first project
+This contains assignments for the WebFundamentals portion of the Coding Dojo full stack curriculum. 
