@@ -1,0 +1,13 @@
+/* styles for webFundamentals assignments */
+
+.profileTile{
+    height: 150px;
+    width: 150px;
+}
+
+.prgrmLanguages, .prgrmLanguages *{
+    border: 1px solid;
+    width: 25%;
+    text-align: left;
+    background-color: aquamarine;
+}
