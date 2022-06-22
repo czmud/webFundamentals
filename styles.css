@@ -1,5 +1,10 @@
 /* styles for webFundamentals assignments */
 
+.logos{
+    height: 15px;
+    width: 15px;
+}
+
 .profileTile{
     height: 150px;
     width: 150px;
@@ -9,5 +14,4 @@
     border: 1px solid;
     width: 25%;
     text-align: left;
-    background-color: aquamarine;
 }
