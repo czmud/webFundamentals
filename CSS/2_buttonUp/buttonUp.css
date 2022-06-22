@@ -1,0 +1,41 @@
+/* css for button up assignment */
+
+*{
+    margin: 10px;
+}
+
+body{
+    margin: 50px;
+}
+
+.btn1{
+    background-color: ivory;
+    color: lightseagreen;
+    font-size: 200%;
+    width: 400px;
+    height: 70px;
+    border-radius: 50px;
+    border: 3px solid lightseagreen;
+}
+
+.btn2{
+    background-color: lightseagreen;
+    color: white;
+    font-size: 70px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50px;
+    border: 0px solid lightseagreen;
+}
+
+.btn3{
+    background-color: royalblue;
+    color: white;
+    font-size: 250%;
+    width: 500px;
+    height: 100px;
+    border: 5px solid black;
+    box-shadow: 10px 10px black;
+}
