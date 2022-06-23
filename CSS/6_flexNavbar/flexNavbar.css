@@ -1,0 +1,38 @@
+/* CSS formatting for flex navbar assignment */
+
+a{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+.active{
+    font-weight: bold;
+}
+.btn{
+    background-color: #15a1b7;
+    color: #f1f1f1;
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    font-size: 16px;
+}
+li{
+    margin: 10px;
+}
+.nav{
+    background-color: #333333;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 16px;
+}
+.nav-title{
+    color: #f1f1f1;
+}
