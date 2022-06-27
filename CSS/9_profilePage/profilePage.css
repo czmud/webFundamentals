@@ -1,0 +1,198 @@
+/* CSS formatting for Profile Page assignment */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.active{
+    font-weight: bold;
+}
+body{
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.banner{
+    background-color: black;
+    color:  #f1f1f1;
+    min-height: 40px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.btn{
+    background-color: #15a1b7;
+    color: #f1f1f1;
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    font-size: 16px;
+}
+.columnConnect{
+    width: 20%;
+    height: 100%;
+}
+.columnSide{
+    width: 20%;
+    height: 100%;
+}
+.columnUser{
+    width: 40%;
+    height: 100%;
+}
+#connections{
+    background-color: ivory;
+    width: 90%;
+    margin: 5%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.educationRow{
+    display: flex;
+    flex-direction: column;
+}
+#education{
+    background-color: ivory;
+    width: 90%;
+    margin: 5%;
+}
+#education .banner >*{
+    margin-left: 20px;
+}
+#education h3{
+    margin: 10px 0px 5px;
+    font-size: 20px;
+}
+#education h4{
+    font-size: 16px;
+    color: grey;
+}
+#education span{
+    margin: 10px 0px;
+}
+.friendCircle{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin: 10px 15px;
+}
+#friendLinks{
+    border-top: 2px solid black;
+    margin: 5%;
+    padding-top: 15px;
+}
+.friendNumber{
+    background-color: green;
+    height: 18px;
+    min-width: 18px;
+    border-radius: 15px;
+    font-size: 16;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+}
+.friendRow{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.friendRow span{
+    margin-right: 20px;
+}
+.icon{
+    height: 20px;
+    width: 20px;
+}
+.iconRequest{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    margin: 10px 5px;
+}
+.navLeft{
+    display: flex;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 16px;
+    margin: 10px;
+}
+.nav-links *{
+    margin: 5px;
+}
+.nav-title{
+    color: #f1f1f1;
+    font-size: 32px;
+    margin: 5px;
+}
+#navbar{
+    background-color: #333333;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+#navbar a{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+#pageContent{
+    min-height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+#requests{
+    background-color: ivory;
+    width: 90%;
+    margin: 5%;
+}
+.sectionBox{
+    border: 2px solid black;
+}
+.userCircle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+#userCard{
+    background-color: ivory;
+    height: 320px;
+    width: 90%;
+    margin: 5%;
+}
+#userCard a{
+    color: darkgreen;
+}
+#userCard .banner{
+    background-color: darkgreen;
+    height: 33.33333%;
+    position: relative;
+}
+#userCard .content{
+    position: relative;
+    top: -16.66667%;
+}
+#userCard span{
+    margin: 5px;
+}
+
+
