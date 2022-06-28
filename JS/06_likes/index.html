@@ -9,38 +9,59 @@
     <script src="likes.js" async></script>
 </head>
 <body>
-    <div id="navbar">
+    <div id="nav-bar">
         <h1>Network</h1>
-        <input type="text" name="searchBar" placeholder="Search">
+        <input class="search-bar" type="text" name="searchBar" placeholder="Search">
         <button class="btn" onclick="loginToggle(this)">Login</button>
     </div>
     <h1>Your Feed</h1>
-    <!-- <div class="columnUser">ouch</div> -->
-    
-    <div class="columnPosts">
-        <div class="post" id="k107")>
-            <div class="postInfo">
+    <div class="page-content">    
+        <div class="column-user">
+            <div class="user-card" id="u529">
+                <img class="icon-current-user" src="/Users/czmuda/code/webFundamentals/CSS/9_profilePage/assets/adrien-s.jpg" alt="user img">
                 <h2 class="profile-name"></h2>
-                <span class="postLikes"></span>
-                <button onclick="likedPost(this)" class="btn">Like</button>
             </div>
-            <div class="postText"></div>
         </div>
-        <div class="post" id="k128")>
-            <div class="postInfo">
-                <h2 class="profile-name"></h2>
-                <span class="postLikes"></span>
-                <button onclick="likedPost(this)" class="btn">Like</button>
+        <div class="column-posts">
+            <div class="post" id="k107")>
+                <div class="post-info">
+                    <img class="icon-user" src="/Users/czmuda/code/webFundamentals/CSS/9_profilePage/assets/adrien-s.jpg" alt="user img">
+                    <h2 class="profile-name"></h2>
+                    <span class="post-likes"></span>
+                    <button onclick="likePost(this)" class="btn liked-false">Like</button>
+                </div>
+                <div class="post-text-holder">
+                    <p class="post-text"></p>
+                </div>
             </div>
-            <div class="postText"></div>
+            <div class="post" id="k128")>
+                <div class="post-info">
+                    <h2 class="profile-name"></h2>
+                    <span class="post-likes"></span>
+                    <button onclick="likePost(this)" class="btn liked-false">Like</button>
+                </div>
+                <div class="post-text-holder">
+                    <p class="post-text"></p>
+                </div>
+            </div>
+            <div class="post" id="k793")>
+                <div class="post-info">
+                    <h2 class="profile-name"></h2>
+                    <span class="post-likes"></span>
+                    <button onclick="likePost(this)" class="btn liked-false">Like</button>
+                </div>
+                <div class="post-text-holder">
+                    <p class="post-text"></p>
+                </div>
+            </div>
         </div>
-        <div class="post" id="k793")>
-            <div class="postInfo">
-                <h2 class="profile-name"></h2>
-                <span class="postLikes"></span>
-                <button onclick="likedPost(this)" class="btn">Like</button>
+        <div class="column-friends">
+            <div class="friend-requests">
+                Friend Requests
             </div>
-            <div class="postText"></div>
+            <div class="friend-list">
+                Friends
+            </div>
         </div>
     </div>
     <div id="loggedOut"></div>

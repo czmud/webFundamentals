@@ -10,27 +10,33 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .btn{
-    background-color: #15a1b7;
     color: #f1f1f1;
     padding: 5px;
     border: 2px solid black;
     font-size: 16px;
     margin: 5px;
 }
-.columnPosts{
+.column-posts{
     width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
-.columnUser{
-    background-color: turquoise;
-    width: 20%;
+.column-user{
+    width: 15%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0px 50px;
 }
-#navbar{
+.column-friends{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
+}
+#nav-bar{
     background-color: #333333;
     width: 100%;
     padding: 0px 20px;
@@ -42,36 +48,49 @@ body{
     z-index: 10;
     margin-bottom: 20px;
 }
-#navbar h1{
+#nav-bar h1{
     color: #f1f1f1;
     font-size: 32px;
     margin: 5px;
 }
+.page-content{
+    min-height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 .post{
+    background-color: ivory;
     border: 3px solid black;
     width: 100%;
-    height: 150px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
-.postInfo{
+.post-info{
     background-color: darkgreen;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 25%;
+    height: 33.33333%;
     width: 100%;
 }
-.postText{
-    height: 75%;
+.post-text-holder{
+    height: 66.66667%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.post-text{
     font-size: 16px;
-    margin: 20px;
+    padding: 20px;
+    word-wrap: normal;
 }
 
 #loggedOut{
@@ -81,6 +100,66 @@ body{
     position: absolute;
 }
 
-.postLikes{
+.post-likes{
     font-size: 18px;
+}
+
+.user-card{
+    background-color: ivory;
+    border: 3px solid black;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.search-bar{
+    font-size: 16px;
+    padding: 4px;
+}
+
+.icon-current-user{
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    margin: 20px 20px;
+}
+
+.icon-user{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 10px 10px;
+}
+
+
+.liked-true{
+    background-color: darkgrey;
+}
+.liked-false{
+    background-color: #15a1b7;
+}
+
+.friend-requests{
+    background-color: ivory;
+    border: 3px solid black;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.friend-list{
+    background-color: ivory;
+    border: 3px solid black;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
