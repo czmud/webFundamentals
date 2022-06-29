@@ -12,43 +12,78 @@
     <div id="nav-bar">
         <h1>Network</h1>
         <input class="search-bar" type="text" name="searchBar" placeholder="Search">
+        <!-- <input class="search-bar" type="text" id="login-key" name="loginUserId" placeholder="Enter User ID"> -->
         <button class="btn" onclick="loginToggle(this)">Login</button>
     </div>
     <h1>Your Feed</h1>
     <div class="page-content">    
+        <!----------------------------------------USER CARD-------------------------------------------->
         <div class="column-user">
             <div class="user-card" id="u529">
-                <img class="icon-current-user" src="/Users/czmuda/code/webFundamentals/CSS/9_profilePage/assets/adrien-s.jpg" alt="user img">
+                <img class="icon-current-user" alt="user img">
                 <h2 class="profile-name"></h2>
+                <div class="post-text-holder">
+                    <p class="post-text"></p>
+                </div>
             </div>
         </div>
+        <!------------------------------------------POSTS---------------------------------------------->
         <div class="column-posts">
-            <div class="post" id="k107")>
+            <div class="post" id="p107")>
                 <div class="post-info">
-                    <img class="icon-user" src="/Users/czmuda/code/webFundamentals/CSS/9_profilePage/assets/adrien-s.jpg" alt="user img">
-                    <h2 class="profile-name"></h2>
-                    <span class="post-likes"></span>
-                    <button onclick="likePost(this)" class="btn liked-false">Like</button>
+                    <div class="row-left">
+                        <img class="icon-user" alt="user img">
+                        <h2 class="profile-name"></h2>
+                    </div>
+                    <div class="row-right">
+                        <span class="post-likes"></span>
+                        <button onclick="likePost(this)" class="btn liked-false">Like</button>
+                    </div>
                 </div>
                 <div class="post-text-holder">
                     <p class="post-text"></p>
                 </div>
             </div>
-            <div class="post" id="k128")>
+            <div class="post" id="p128")>
                 <div class="post-info">
-                    <h2 class="profile-name"></h2>
-                    <span class="post-likes"></span>
-                    <button onclick="likePost(this)" class="btn liked-false">Like</button>
+                    <div class="row-left">
+                        <img class="icon-user" alt="user img">
+                        <h2 class="profile-name"></h2>
+                    </div>
+                    <div class="row-right">
+                        <span class="post-likes"></span>
+                        <button onclick="likePost(this)" class="btn liked-false">Like</button>
+                    </div>
                 </div>
                 <div class="post-text-holder">
                     <p class="post-text"></p>
                 </div>
             </div>
-            <div class="post" id="k793")>
+            <div class="post" id="p793")>
                 <div class="post-info">
-                    <h2 class="profile-name"></h2>
-                    <span class="post-likes"></span>
-                    <button onclick="likePost(this)" class="btn liked-false">Like</button>
+                    <div class="row-left">
+                        <img class="icon-user" alt="user img">
+                        <h2 class="profile-name"></h2>
+                    </div>
+                    <div class="row-right">
+                        <span class="post-likes"></span>
+                        <button onclick="likePost(this)" class="btn liked-false">Like</button>
+                    </div>
+                </div>
+                <div class="post-text-holder">
+                    <p class="post-text"></p>
+                </div>
+            </div>
+            <div class="post" id="p307")>
+                <div class="post-info">
+                    <div class="row-left">
+                        <img class="icon-user" alt="user img">
+                        <h2 class="profile-name"></h2>
+                    </div>
+                    <div class="row-right">
+                        <span class="post-likes"></span>
+                        <button onclick="likePost(this)" class="btn liked-false">Like</button>
+                    </div>
                 </div>
                 <div class="post-text-holder">
                     <p class="post-text"></p>
@@ -56,11 +91,79 @@
             </div>
         </div>
         <div class="column-friends">
+            <!-------------------------------------FRIEND REQUESTS----------------------------------------->
             <div class="friend-requests">
-                Friend Requests
+                <div class="banner">
+                    <div class="request-count" id="user-requests"></div>
+                    <div>
+                        Your Requests
+                    </div>
+                </div>
+                <div>
+                    <div class="friend-row" id="u798">
+                        <div class="row-left">
+                            <img class="icon-user" alt="profile img">
+                            <span class="friend-name"></span>
+                        </div>
+                        <div class="row-right">
+                            <button class="button-request" onclick="acceptRequest(this)">
+                                <img class="icon-request" src="assets/accept-circle.png" alt="accept img">
+                            </button>
+                            <button class="button-request" onclick="declineRequest(this)">
+                                <img class="icon-request" src="assets/close-circle.png" alt="decline img">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="friend-row" id="u799">
+                        <div class="row-left">
+                            <img class="icon-user" alt="profile img">
+                            <span class="friend-name"></span>
+                        </div>
+                        <div class="row-right">
+                            <button class="button-request" onclick="acceptRequest(this)">
+                                <img class="icon-request" src="assets/accept-circle.png" alt="accept img">
+                            </button>
+                            <button class="button-request" onclick="declineRequest(this)">
+                                <img class="icon-request" src="assets/close-circle.png" alt="decline img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-----------------------------------------FRIENDS--------------------------------------------->
             <div class="friend-list">
-                Friends
+                <div class="banner">
+                    <div class="request-count" id="user-friends"></div>
+                    <div>
+                        Your Friends
+                    </div>
+                </div>
+                <div>
+                    <div class="friend-row" id="u445">
+                        <div class="row-left">
+                            <img class="icon-user" alt="profile img">
+                            <span class="friend-name"></span>
+                        </div>
+                    </div>
+                    <div class="friend-row" id="u447">
+                        <div class="row-left">
+                            <img class="icon-user" alt="profile img">
+                            <span class="friend-name"></span>
+                        </div>
+                    </div>
+                    <div class="friend-row" id="u451">
+                        <div class="row-left">
+                            <img class="icon-user" alt="profile img">
+                            <span class="friend-name"></span>
+                        </div>
+                    </div>
+                    <div class="friend-row" id="u473">
+                        <div class="row-left">
+                            <img class="icon-user" alt="profile img">
+                            <span class="friend-name"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
