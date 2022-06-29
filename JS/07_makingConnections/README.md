@@ -1,0 +1,1 @@
+See 06_likes for the assignment objectives described in 'Making Connections' they were implemented in a larger project, where likes are tracked within JSON-like datastructure.
