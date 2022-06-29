@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather Report</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" typ="text/css" href="style.css">
+    
+    <!-- jquery script should be designed to run asynchronously and then call a function to load dojoWeather.js next-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+    <script src="dojoWeather.js" async></script>
+
+</head>
+<body class="body-content">
+    <div class="nav-bar">
+        <div class="row-left create-padding-left">
+            <h1>DojoWeather</h1>
+        </div>
+        <div class="row-right create-padding-right">
+            <ul class="nav-bar-list">
+                <li><button class="city-btn">Burbank</button></li>
+                <li><button class="city-btn">Chicago</button></li>
+                <li><button class="city-btn">Dallas</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sub-nav-bar">
+        <div class="row-left create-padding-left">
+            <h1>San Jose</h1>
+        </div>
+        <div class="row-right create-padding-right">
+            <span class="uom">Show temp in</span> 
+            <select class="uom" onchange="convertTemp(this)">
+                <option value="F" selected>F</option>
+                <option value="C">C</option>
+            </select>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="column-weather-day">
+            <h2 class="weekday">Today</h2>
+            <img class="icon-weather" src="assets/some_rain.png">
+            <p class="conditions">rainy</p>
+            <div class="row">
+                <div class="row-left day-high-temp temp">75</div>
+                <div class="row-right day-low-temp temp">65</div>
+            </div>
+        </div>
+        <div class="column-weather-day">
+            <h2 class="weekday">Tomorrow</h2>
+            <img class="icon-weather" src="assets/some_sun.png">
+            <p class="conditions">sunny</p>
+            <div class="row">
+                <div class="row-left day-high-temp temp">80</div>
+                <div class="row-right day-low-temp temp">66</div>
+            </div>
+        </div>
+        <div class="column-weather-day">
+            <h2 class="weekday">Friday</h2>
+            <img class="icon-weather" src="assets/some_clouds.png">
+            <p class="conditions">cloudy</p>
+            <div class="row">
+                <div class="row-left day-high-temp temp">69</div>
+                <div class="row-right day-low-temp temp">61</div>
+            </div>
+        </div>
+        <div class="column-weather-day">
+            <h2 class="weekday">Saturday</h2>
+            <img class="icon-weather" src="assets/some_sun.png">
+            <p class="conditions">sunny</p>
+            <div class="row">
+                <div class="row-left day-high-temp temp">78</div>
+                <div class="row-right day-low-temp temp">70</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-cookies">
+        <div class="row-left">
+            <img class="icon-cookies" src="assets/cookie.png" alt="cookie img">
+            <p><b>Stop! Cookie time</b><br>We use cookies (sadly not the edible ones to personalize content and ads
+            to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <div class="row-right">
+            <button class="cookies-btn">Accept All Cookies</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+.body-content{
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar{
+    background-color: #333333;
+    color: aqua;
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.create-padding-left{
+    margin-left: 20%;
+}
+
+.create-padding-right{
+    margin-right: 20%;
+}
+
+.nav-bar-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 16px;
+}
+.nav-bar-list >*{
+    margin: 10px;
+}
+.sub-nav-bar{
+    background-color: darkgreen;
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.row-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.row-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.page-content{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.column-weather-day{
+    background-color: aqua;
+    width: 14%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 1%;
+    align-items: center;
+}
+
+
+.footer-cookies{
+    background-color: darkgray;
+    width: 60%;
+    height: 100px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 3px solid royalblue;
+}
+
+.weekday{
+    margin: 20px;
+    justify-content: center;
+    font-size: 28px;
+}
+
+
+
+.icon-weather{
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    margin: 10px 0px 30px;
+}
+
+.conditions{
+    font-size: 22px;
+    margin: 20px;
+}
+
+.row{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.day-high-temp{
+    color: red;
+    margin-left: 25px;
+    font-size: 32px;
+}
+.day-low-temp{
+    color: blue;
+    margin-right: 25px;
+    font-size: 32px;
+}
+
+
+.icon-cookies{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.cookies-btn{
+    background-color: lime;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.city-btn{
+    background-color: #333333;
+    padding: 5px;
+    border: 0px solid black;
+    font-size: 22px;
+    color: cyan;
+}
+
+.uom{
+    font-size: 18px;
+    margin: 5px;
+}
